@@ -1,4 +1,4 @@
-#  Rails Setup:
+#  New Environment Setup (For Rails):
 ***
 
 ### Install RVM and ruby versions 
@@ -19,3 +19,13 @@
  
 ### Install Rails
     gem install rails -v2.3.5
+
+### Install MySQL (if not installed already)
+(Relax, this will take a while)
+    sudo apt-get install mysql-server
+
+### Mysql gem Dependancies
+    sudo apt-get install libmysqlclient-dev 
+
+### Mysql Gem 
+    gem install MySQL
