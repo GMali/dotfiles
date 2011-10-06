@@ -16,16 +16,18 @@
     sudo aptitude install build-essential libssl-dev libreadline5 libreadline5-dev zlib1g zlib1g-dev
 #####or
     sudo apt-get install build-essential libssl-dev libreadline5 libreadline5-dev zlib1g zlib1g-dev 
+    
+#### Mysql gem Dependancies
+    sudo apt-get install libmysqlclient-dev
+ 
  
 ### Install Rails
     gem install rails -v2.3.5
 
 ### Install MySQL (if not installed already)
-(Relax, this will take a while)
+######(Relax, this will take a while)
     sudo apt-get install mysql-server
-
-### Mysql gem Dependancies
-    sudo apt-get install libmysqlclient-dev 
+ 
 
 ### Mysql Gem 
     gem install MySQL
