@@ -5,6 +5,9 @@ colorscheme desertEx
 set nocompatible
 filetype on
 filetype plugin on
+set nobackup
+set nowritebackup
+set noswapfile
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " From Github.com/bnmrrs
