@@ -1,0 +1,65 @@
+#JADE SNIPPETS
+#Gaurav Mali
+
+snippet html
+	html	${1}
+snippet body
+	body ${1}
+snippet head
+	head
+		meta(http-equiv = "content-type", content = "text/html; charset=utf-8")
+		title	${1}
+		meta(name = "description", content = "${2}")
+snippet title
+	title	${1}
+snippet script
+	script(src = "${1}.js", type = "text/javascript")
+snippet link
+	link(rel = "stylesheet", href = "${1}")
+
+snippet h1
+	h1(id = "${1:heading}", class = "${2:class}")	${3:$1}
+snippet h2
+	h2(id = "${1:heading}", class = "${2:class}")	${3:$1}
+snippet h3
+	h3(id = "${1:heading}", class = "${2:class}")	${3:$1}
+snippet h4
+	h4(id = "${1:heading}", class = "${2:class}")	${3:$1}
+snippet h5
+	h5(id = "${1:heading}", class = "${2:class}")	${3:$1}
+snippet h6
+	h6(id = "${1:heading}", class = "${2:class}")	${3:$1}
+
+snippet opt
+	option(value = "${1:option}")
+		${2:$1}
+snippet optt
+	option
+		${1:option}
+snippet select
+	select(name = "${1:some_name}", id = "${2:$1}")
+		option(value = "${3:option}")
+			${4:$3}
+snippet input
+	input(type = "${1:text/submit/hidden/button}", name = "${2:some_name}", value = "${3:some_value}")
+snippet textarea
+	textarea(name = "${1:Name}", rows = "${2:8}", cols = "${3:40}")
+		${4:text} 
+
+
+snippet table
+	table(border = "${1:0}")
+		tr
+			th	${2:Header}
+		tr
+			th	${3:Data}
+
+snippet a
+	a(href = "${1:#}", title = "${2:some_title}")	${3:name_of_link}
+snippet p
+	p(class = "${1:class_name}")	${2:text}
+snippet img
+	img(alt = "${1:alternate_text}", src = "${2:image_link}")	${3:text}
+snippet ul
+	ul(id = "${1}", class = "${2}")
+		li(id = "${3}", class = "${4}")	${5:text}

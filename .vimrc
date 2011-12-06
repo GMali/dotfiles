@@ -1,6 +1,11 @@
 "	Color Scheme and Fonts
 colorscheme desertEx
 
+" Random
+set nocompatible
+filetype on
+filetype plugin on
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " From Github.com/bnmrrs
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -63,6 +68,8 @@ map <C-S-tab> gT
 map <C-S-C> "+y
 "cut to clipboard outside vim
 map <C-S-x> "+x
+"duplicate Line
+map <C-d> yyp
 "open new tab
 map <C-T> :tabnew<CR>
 "select all
