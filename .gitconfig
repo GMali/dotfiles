@@ -1,0 +1,33 @@
+[user]
+    name  = Gaurav Mali
+    email = dev@gauravmali.com
+
+[color]
+    branch      = true
+    diff        = true
+    interactive = true
+    status      = true
+    ui          = true
+
+[push]
+    default = tracking
+
+[alias]
+    lg     = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    last   = log -1 HEAD
+    st     = status
+    staged = diff --cached
+    save   = commit -v
+    nuke   = checkout -p
+    cob    = checkout -b
+    com    = checkout master
+    co     = checkout
+    amend  = commit --amend
+    patch  = add -p
+
+[apply]
+    whitespace = fix
+    # automagically fix whitespace
+    # see `man git-apply' for other options
+
+# More here: https://github.com/derwiki/dotfiles/blob/master/.gitconfig
