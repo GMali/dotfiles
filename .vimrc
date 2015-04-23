@@ -1,4 +1,6 @@
 "	Color Scheme and Fonts
+set background=dark
+syntax on
 colorscheme desertEx
 
 " Random
