@@ -2,12 +2,21 @@
     name  = Gaurav Mali
     email = dev@gauravmali.com
 
+[log]
+    decorate = short
+
 [color]
     branch      = true
     diff        = true
     interactive = true
     status      = true
     ui          = true
+    auto        = true
+
+[rerere]
+    enabled = true
+    # Reuse recorded resolution of conflicted merges
+    # see `man git-rerere'
 
 [push]
     default = tracking
@@ -18,12 +27,14 @@
     st     = status
     staged = diff --cached
     save   = commit -v
+    ci     = commit
     nuke   = checkout -p
     cob    = checkout -b
     com    = checkout master
     co     = checkout
     amend  = commit --amend
     patch  = add -p
+    rhom   = reset --hard origin/master
 
 [apply]
     whitespace = fix
@@ -31,3 +42,6 @@
     # see `man git-apply' for other options
 
 # More here: https://github.com/derwiki/dotfiles/blob/master/.gitconfig
+[hooks]
+	runjscs = true
+	runpyflakes = true
