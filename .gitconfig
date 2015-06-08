@@ -36,7 +36,7 @@
     amend  = commit --amend
     patch  = add -p
     rhom   = reset --hard origin/master
-	rat    = show -s --format=format:'%C(bold red)%an'
+    rat    = show -s --format=format:'%C(bold red)%an'
 
 [apply]
     whitespace = fix
