@@ -47,3 +47,6 @@
 [hooks]
 	runjscs = true
 	runpyflakes = true
+
+[include]
+    path = .localgitconfig
