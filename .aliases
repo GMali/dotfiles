@@ -1,0 +1,10 @@
+# general
+alias aliases='subl ~/.aliases'
+alias exports='subl ~/.exports'
+alias functions='subl ~/.functions'
+
+# directories
+alias mk=mkFunction
+
+# other
+alias hosts='sudo $EDITOR /etc/hosts'

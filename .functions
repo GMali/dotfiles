@@ -1,0 +1,6 @@
+# Creates a directory and changes into it
+# Eg: `mk testing/`
+function mkFunction {
+    mkdir -p $1
+    cd $1
+}
