@@ -1,0 +1,41 @@
+[
+  {
+    "keys": ["alt+super+up"],
+    "command": "swap_line_up"
+  },
+  {
+    "keys": ["alt+super+down"],
+    "command": "swap_line_down"
+  },
+  {
+    "keys": ["super+shift+k"],
+    "command": "run_macro_file",
+    "args": {
+      "file": "res://Packages/Default/Delete Line.sublime-macro"
+    }
+  },
+  {
+    "keys": ["super+g"],
+    "command": "show_overlay",
+    "args": {
+      "overlay": "goto",
+      "text": ":"
+    }
+  },
+  {
+    "keys": ["super+b"],
+    "command": "git_blame"
+  },
+  {
+    "keys": ["super+shift+a"],
+    "command": "alignment"
+  },
+  {
+    "keys": ["super+shift+u"],
+    "command": "upper_case"
+  },
+  {
+    "keys": ["super+shift+l"],
+    "command": "lower_case"
+  }
+]
