@@ -23,24 +23,15 @@
 		".git",
 		".hg",
 		"CVS",
-		"lib",
-		"node_modules",
-		"libraries",
-		"bin",
+		"node_modules"
 	],
 	"font_face": "Monaco",
 	"font_size": 17,
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"2pdf",
-		"Better CoffeeScript",
-		"Color Highlighter",
 		"JavaScript",
-		"Markdown",
-		"SplitScreen",
-		"SublimeLinter",
-		"Vintage"
+		"Markdown"
 	],
 	"indent_to_bracket": true,
 	"index_exclude_patterns":
@@ -53,11 +44,12 @@
 	"rulers":
 	[
 		80,
+		100,
 		120
 	],
 	"tab_size": 4,
 	"theme": "Spacegray Eighties.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
+	"word_separators": "./\\()\"'-_:,.;<>~!@#$%^&*|+=[]{}`~?"
 }

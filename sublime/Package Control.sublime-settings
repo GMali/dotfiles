@@ -2,14 +2,13 @@
 	"bootstrapped": true,
 	"installed_packages":
 	[
-		"2pdf",
 		"Alignment",
 		"All Autocomplete",
-		"Better CoffeeScript",
 		"Better Completion",
 		"Better JavaScript",
-		"Color Highlighter",
 		"Comment-Snippets",
+		"Cucumber",
+		"Cucumber Completion",
 		"DocBlockr",
 		"ES6-Toolkit",
 		"Git",
@@ -17,9 +16,11 @@
 		"GitHubinator",
 		"Google Spell Check",
 		"Handlebars",
+		"HTML Mustache",
 		"Jade",
 		"JavaScript Snippets",
 		"JavaScriptNext - ES6 Syntax",
+		"Jinja2",
 		"JSX",
 		"LESS",
 		"Markdown Preview",
@@ -27,13 +28,14 @@
 		"nginx",
 		"Origami",
 		"Package Control",
+		"PackageResourceViewer",
 		"PlainTasks",
 		"Pretty JSON",
 		"SCSS",
 		"SideBarEnhancements",
 		"SJSON",
+		"SqlBeautifier",
 		"SublimeCodeIntel",
-		"Theme - Spacegray",
-		"TrailingSpaces"
+		"Theme - Spacegray"
 	]
 }

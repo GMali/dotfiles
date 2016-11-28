@@ -1,0 +1,11 @@
+{
+	"extensions":
+	[
+		".aliases",
+		".exports",
+		".functions",
+		".gitconfig",
+		".pl-code",
+		".pl-copy"
+	]
+}
