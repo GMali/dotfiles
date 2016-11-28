@@ -1,33 +1,7 @@
-#  New Environment Setup (For Rails):
-***
+#  New Environment Setup
 
-### Install RVM and ruby versions 
-    http://beginrescueend.com/rvm/install/
-
-### Create and use Gemsets
-    rvm gemset create <gemset_name>
-    rvm use <ruby_version>@<gemset_name>
-
-### Install Dependancies
-    rvm package install zlib
-#####or
-    rvm install zlib
-#####or
-    sudo aptitude install build-essential libssl-dev libreadline5 libreadline5-dev zlib1g zlib1g-dev
-#####or
-    sudo apt-get install build-essential libssl-dev libreadline5 libreadline5-dev zlib1g zlib1g-dev 
-    
-#### Mysql gem Dependancies
-    sudo apt-get install libmysqlclient-dev
- 
- 
-### Install Rails
-    gem install rails -v2.3.5
-
-### Install MySQL (if not installed already)
-######(Relax, this will take a while)
-    sudo apt-get install mysql-server
- 
-
-### Mysql Gem 
-    gem install MySQL
+1. Install [bash-it](https://github.com/Bash-it/bash-it)
+2. Install [Sublime Text](https://www.sublimetext.com/)
+3. Move the dotfiles to `~`
+4. Move sublime files to `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/`
+5. Create a `.localgitconfig` file with the new email address
