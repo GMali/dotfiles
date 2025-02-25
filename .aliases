@@ -1,10 +1,14 @@
-# general
+# .dotfiles
 alias aliases='subl ~/.aliases'
 alias exports='subl ~/.exports'
 alias functions='subl ~/.functions'
 
-# directories
+# Overrides
+alias ls='colorls -al'
+alias cat='bat'
+
+# Functions
 alias mk=mkFunction
 
-# other
+# Other
 alias hosts='sudo $EDITOR /etc/hosts'
