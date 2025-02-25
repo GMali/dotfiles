@@ -43,10 +43,5 @@
     # automagically fix whitespace
     # see `man git-apply' for other options
 
-# More here: https://github.com/derwiki/dotfiles/blob/master/.gitconfig
-[hooks]
-	runjscs = true
-	runpyflakes = true
-
 [include]
     path = .localgitconfig
