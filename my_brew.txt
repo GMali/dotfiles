@@ -1,0 +1,7 @@
+bat
+htop
+n
+ruby
+tig
+jq
+pgcli
