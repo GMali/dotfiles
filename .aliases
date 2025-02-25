@@ -1,7 +1,7 @@
 # .dotfiles
-alias aliases='subl ~/.aliases'
-alias exports='subl ~/.exports'
-alias functions='subl ~/.functions'
+alias aliases='$EDITOR ~/.aliases'
+alias exports='$EDITOR ~/.exports'
+alias functions='$EDITOR ~/.functions'
 
 # Overrides
 alias ls='colorls -al'
@@ -12,3 +12,4 @@ alias mk=mkFunction
 
 # Other
 alias hosts='sudo $EDITOR /etc/hosts'
+alias reload='source ~/.zshrc'
