@@ -1,3 +1,4 @@
+awscli
 bat
 cmake
 cmatrix
