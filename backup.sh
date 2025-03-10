@@ -52,10 +52,10 @@ exportBrew() {
     blacklist="blacklist_formulae.txt"
     if [[ -f "$blacklist" ]]; then
         printColorful "Filtering out blacklisted formulae from $blacklist"
-        echo "$brew_leaves" | grep -v -F -f "$blacklist" >my_brew.txt
+        echo "$brew_leaves" | grep -v -F -f "$blacklist" >brew.txt
     else
         printColorful "No blacklist file found. Using all brew leaves."
-        echo "$brew_leaves" >my_brew.txt
+        echo "$brew_leaves" >brew.txt
     fi
 }
 
