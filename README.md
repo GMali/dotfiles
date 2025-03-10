@@ -2,6 +2,7 @@
 
 **Table of Contents**
 - [README](#readme)
+  - [Preview](#preview)
   - [How to setup a new machine](#how-to-setup-a-new-machine)
     - [Download and setup iTerm2](#download-and-setup-iterm2)
     - [Zsh](#zsh)
@@ -10,6 +11,10 @@
     - [Copy all other .files](#copy-all-other-files)
     - [Homebrew](#homebrew)
   - [How to backup changes to this repo](#how-to-backup-changes-to-this-repo)
+
+## Preview
+
+![preview](./screenshots/preview-2025-03.jpeg)
 
 ## How to setup a new machine
 
