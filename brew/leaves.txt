@@ -12,6 +12,7 @@ mandown
 n
 pgcli
 ruby
+stow
 thefuck
 tig
 tldr

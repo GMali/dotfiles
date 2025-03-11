@@ -16,26 +16,6 @@ printDone() {
     printf "✅\n"
 }
 
-copyFiles() {
-    for file in "${files_to_copy[@]}"; do
-        if [[ -f "$file" ]]; then
-            cp "$file" .
-        else
-            printColorful "Warning: $file does not exist."
-        fi
-    done
-}
-
-copyDirectories() {
-    for dir in "${directories_to_copy[@]}"; do
-        if [[ -d "$dir" ]]; then
-            cp -R "$dir" .
-        else
-            printColorful "Warning: $dir does not exist."
-        fi
-    done
-}
-
 copyProfiles() {
     target_dir="iterm"
     mkdir -p "$target_dir"
@@ -49,47 +29,23 @@ copyProfiles() {
 
 exportBrew() {
     brew_leaves=$(brew leaves)
-    blacklist="blacklist_formulae.txt"
+    blacklist="brew/blacklist_formulae.txt"
     if [[ -f "$blacklist" ]]; then
         printColorful "Filtering out blacklisted formulae from $blacklist"
-        echo "$brew_leaves" | grep -v -F -f "$blacklist" >brew.txt
+        echo "$brew_leaves" | grep -v -F -f "$blacklist" >brew/leaves.txt
     else
         printColorful "No blacklist file found. Using all brew leaves."
-        echo "$brew_leaves" >brew.txt
+        echo "$brew_leaves" >brew/leaves.txt
     fi
 }
 
-# 1. Files to copy from your home directory:
-files_to_copy=(
-    "$HOME/.p10k.zsh"
-    "$HOME/.aliases"
-    "$HOME/.exports"
-    "$HOME/.functions"
-    "$HOME/.gitconfig"
-    "$HOME/.vimrc"
-    "$HOME/.zshrc"
-)
-
-printColorful "Copying .files"
-copyFiles
-printDone
-
-# 2. Directories to copy:
-directories_to_copy=(
-    "$HOME/.vim"
-)
-
-printColorful "Copying .directories"
-copyDirectories
-printDone
-
-# 3. Copy iTerm2 dynamic profiles file into an "iterm" directory.
+# Copy iTerm2 dynamic profiles file into an "iterm" directory.
 # Create the target directory if it doesn't exist.
 printColorful "Copying iTerm2 profiles"
 copyProfiles
 printDone
 
-# 4. Export currently installed brew formulae and filter out blacklisted ones.
+# Export currently installed brew formulae and filter out blacklisted ones.
 printColorful "Exporting brew leaves"
 exportBrew
 printDone

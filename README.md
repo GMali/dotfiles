@@ -6,10 +6,8 @@
   - [How to setup a new machine](#how-to-setup-a-new-machine)
     - [Download and setup iTerm2](#download-and-setup-iterm2)
     - [Zsh](#zsh)
-    - [Vim](#vim)
-    - [Gitconfig](#gitconfig)
-    - [Copy all other .files](#copy-all-other-files)
     - [Homebrew](#homebrew)
+    - [Stow](#stow)
   - [How to backup changes to this repo](#how-to-backup-changes-to-this-repo)
 
 ## Preview
@@ -17,6 +15,8 @@
 ![preview](./screenshots/preview-2025-03.jpeg)
 
 ## How to setup a new machine
+
+Make sure that you clone this repo in the root `~/` directory.
 
 ### Download and setup iTerm2
 
@@ -30,41 +30,27 @@
 
 1. You can find install instructions on [zsh website](https://ohmyz.sh/)
 2. Look at the plugins listed in `.zshrc` and install them manually.
+3. Install the [powerlevel10K theme](https://github.com/romkatv/powerlevel10k)
 
-```
-cp .p10k.zsh ~/
-```
-
-### Vim
-
-```
-cp .vimrc ~/
-cp -R .vim/ ~/
-```
-
-### Gitconfig
-
-```
-cp .gitconfig ~/
-```
-
-Create a `.localgitconfig` file with the new email address
-
-### Copy all other .files
-
-```
-cp .aliases .exports .functions ~/
-```
 
 ### Homebrew
 
 ```
-xargs brew install < my_brew.txt
+xargs brew install < brew/leaves.txt
 ```
+
+### Stow
+
+```
+stow --adopt .
+```
+
+Create a `~/.localgitconfig` file with the new email address associated with this new machine
+
 
 ## How to backup changes to this repo
 
 ```
-./backup.sh
+./brew/backup.sh
 ````
 Then commit and push changes
