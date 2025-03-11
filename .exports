@@ -1,2 +1,18 @@
-# Make vim the default editor
-export EDITOR="vim"
+export EDITOR="code"
+export N_PREFIX=$HOME/.n
+
+###############################################################################
+# Terminal Experience
+###############################################################################
+
+export HOMEBREW_NO_ENV_HINTS=1
+export POWERLEVEL9K_DISABLE_GITSTATUS=true
+export FZF_CTRL_T_OPTS='--preview "bat --style=numbers,changes --color=always --line-range :500 {}" --bind shift-up:preview-up,shift-down:preview-down'
+
+###############################################################################
+# PATHS
+###############################################################################
+
+export PATH="/Applications/Docker.app/Contents/Resources/bin/:$PATH"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="/opt/homebrew/lib/ruby/gems/3.4.0/bin/:$PATH"
