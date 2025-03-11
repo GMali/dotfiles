@@ -4,3 +4,24 @@ function mkFunction {
     mkdir -p $1
     cd $1
 }
+
+# Wrapper for commands to run cmatrix animations in.
+# Eg: `with_cmatrix brew upgrade`
+with_cmatrix() {
+    # Run the target command silently in the background and store its pid
+    "$@" >/dev/null 2>&1 &
+    local target_pid=$!
+
+    # Launch a background monitor (all output redirected) and disown it.
+    (
+        # Wait until the target process is gone.
+        while kill -0 "$target_pid" 2>/dev/null; do sleep 0.2; done
+
+        # Once the target command is finished, kill all running cmatrix processes.
+        killall -SIGINT cmatrix 2>/dev/null
+    ) >/dev/null 2>&1 &
+    disown
+
+    # Run cmatrix in the foreground so you can see its animation.
+    cmatrix -b
+}
