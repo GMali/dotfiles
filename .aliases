@@ -3,10 +3,6 @@ alias aliases='$EDITOR ~/.aliases'
 alias exports='$EDITOR ~/.exports'
 alias functions='$EDITOR ~/.functions'
 
-# Overrides
-alias ls='colorls -alogh'
-alias cat='bat'
-
 # Functions
 alias mk=mkFunction
 
